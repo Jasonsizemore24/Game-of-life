@@ -3,3 +3,14 @@ body, html {
     margin: 100px;
   }
 
+  .container {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: xx-large;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }

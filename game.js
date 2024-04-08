@@ -13,7 +13,7 @@ function make2DArray(cols, rows) {
 
 function setup() {
     
-    createCanvas(1000, 900).position('absolute').style('top', '50%')
+    createCanvas(800, 800).position('absolute').style('top', '50%')
     .style('left', '50%').style('transform', 'translate(-50%, -50%)');
   cols = width / resolution;
   rows = height / resolution;
