@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conway's Game of Life</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <script src="game.js"></script> 
+</head>
+<body>
+    <div class="container">
+      <p class="title" style="margin-left: 450px;font-size: xx-large">Conway's Game Of Life</p>
+      <div>
+        <div id="generations" style="margin-left: 450px;" >Generations: 0</div>
+        <label for="speed" style="margin-left: 450px;">Speed:</label>
+        <input type="range" id="speed" name="speed" min="1" max="30" value="10" oninput="adjustSpeed(this.value)">
+        <span id="speed-value"></span>
+      </div>
+      <div>
+        <label for="bg-color" style="margin-left: 450px;">Background Color:</label>
+        <input type="color" id="bg-color" name="bg-color" onchange="changeBackgroundColor(this.value)">
+      </div>
+      <div>
+        <label for="cell-color" style="margin-left: 450px;">Cell Color:</label>
+        <input type="color" id="cell-color" name="cell-color" onchange="changeCellColor(this.value)">
+      </div>
+    </div>
+</html>
